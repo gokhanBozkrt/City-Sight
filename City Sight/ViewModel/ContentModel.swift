@@ -12,6 +12,8 @@ import SwiftUI
 class ContentModel: NSObject, CLLocationManagerDelegate,ObservableObject {
     
     var locationManager = CLLocationManager()
+    @Published var authorizationState = CLAuthorizationStatus.denied
+    
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     
@@ -28,6 +30,10 @@ class ContentModel: NSObject, CLLocationManagerDelegate,ObservableObject {
     
   // MARK: - Location Manager Delegate Methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+       
+        // Update the authorizationState property
+        authorizationState = locationManager.authorizationStatus
+        
         if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
             // We have permission
             // TO DO:  Start geolocating the user,after we get permission
@@ -40,7 +46,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate,ObservableObject {
   
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // Gives us the location of user
-          print(locations.first ?? "no location")
+      //    print(locations.first ?? "no location")
         let userLocation = locations.first
         if userLocation != nil {
             
@@ -79,7 +85,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate,ObservableObject {
                     // check that there is no error
                     if error == nil {
                       // parse json
-                      print(response)
+               //       print(response)
                         do {
                             let decoder = JSONDecoder()
                             let result = try decoder.decode(BusinessSearch.self, from: data!)
