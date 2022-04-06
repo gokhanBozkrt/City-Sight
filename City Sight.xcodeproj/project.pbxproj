@@ -18,6 +18,7 @@
 		F7DB135327F056C100C1B628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB135227F056C100C1B628 /* Assets.xcassets */; };
 		F7DB135627F056C100C1B628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DB135527F056C100C1B628 /* Preview Assets.xcassets */; };
 		F7DB136027F05C2C00C1B628 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DB135F27F05C2C00C1B628 /* ContentModel.swift */; };
+		F7F5262C27FCC8DC0030B3EA /* BusinessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5262B27FCC8DC0030B3EA /* BusinessRowView.swift */; };
 		F7F9EEE027F82B48001C76E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F9EEDF27F82B48001C76E2 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		F7DB135227F056C100C1B628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DB135527F056C100C1B628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7DB135F27F05C2C00C1B628 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		F7F5262B27FCC8DC0030B3EA /* BusinessRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRowView.swift; sourceTree = "<group>"; };
 		F7F9EEDF27F82B48001C76E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 				F735FB0727F9A285004741E8 /* BusinessListView.swift */,
 				F735FB0927F9A617004741E8 /* BusinessSectionHeaderView.swift */,
 				F735FB0B27F9A799004741E8 /* BusinessSectionView.swift */,
+				F7F5262B27FCC8DC0030B3EA /* BusinessRowView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				F735FB0A27F9A617004741E8 /* BusinessSectionHeaderView.swift in Sources */,
 				F7DB135127F056BF00C1B628 /* LaunchView.swift in Sources */,
 				F7F9EEE027F82B48001C76E2 /* HomeView.swift in Sources */,
+				F7F5262C27FCC8DC0030B3EA /* BusinessRowView.swift in Sources */,
 				F703FB5127F4704100477BF9 /* Business.swift in Sources */,
 				F7DB134F27F056BF00C1B628 /* City_SightApp.swift in Sources */,
 				F703FB5327F4757300477BF9 /* BusinessSearch.swift in Sources */,

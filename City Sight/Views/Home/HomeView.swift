@@ -25,7 +25,7 @@ struct HomeView: View {
                       }
                     Divider()
                     BusinessListView()
-                }
+                }.padding([.horizontal,.top])
             } else {
                 // show map
             }

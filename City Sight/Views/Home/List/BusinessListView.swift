@@ -10,7 +10,7 @@ import SwiftUI
 struct BusinessListView: View {
     @EnvironmentObject var model : ContentModel
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators:false) {
             LazyVStack(alignment: .leading, pinnedViews: [.sectionHeaders]) {
                 
                 BusinessSectionView(title: "Restaurants", businesses: model.restaurants)
