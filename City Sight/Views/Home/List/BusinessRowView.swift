@@ -36,6 +36,7 @@ struct BusinessRowView: View {
             }
             Divider()
         }
+        .foregroundColor(.black)
 
     }
 }
