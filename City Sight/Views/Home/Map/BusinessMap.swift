@@ -20,7 +20,7 @@ struct BusinessMap: UIViewRepresentable {
         for business in model.restaurants + model.sights {
           
             // If the business has a lat/long, create an MKPointAnnotation for it
-            if let lat = business.coordinates?.latitude, let long = business.coordinates?.longitute {
+            if let lat = business.coordinates?.latitude, let long = business.coordinates?.longitude {
             
                 // Create a new annotation
                 let a = MKPointAnnotation()
